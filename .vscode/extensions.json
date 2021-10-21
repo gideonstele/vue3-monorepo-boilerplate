@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "johnsoncodehk.volar",
+    "dbaeumer.vscode-eslint",
+    "johnsoncodehk.vscode-typescript-vue-plugin",
+    "rvest.vs-code-prettier-eslint",
+    "simonsiefke.prettier-vscode",
+    "voorjaar.windicss-intellisense"
+  ]
+}

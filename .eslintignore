@@ -1,0 +1,7 @@
+node_modules
+/.vscode
+/.husky
+/packages
+/scripts
+/__mocks__
+/documents

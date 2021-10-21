@@ -1,0 +1,24 @@
+{
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnSave": true,
+  "eslint.workingDirectories": ["./__mocks__", "./scripts", { "directory": "./packages/app", "!cwd": true }],
+  "volar.tsPluginStatus": true,
+  "volar.codeLens.pugTools": false,
+  "eslint.format.enable": false,
+  "typescript.suggest.paths": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "volar-api.trace.server": "verbose",
+  "volar-document.trace.server": "verbose",
+  "typescript.tsserver.enableTracing": true,
+  "typescript.tsserver.log": "off",
+  "typescript.tsserver.trace": "off",
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "[html]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

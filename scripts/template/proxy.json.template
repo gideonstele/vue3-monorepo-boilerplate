@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://boe-lite.nadileaf.com",
+    "secure": false
+  },
+  "/api/to/mock": {
+    "target": "http://localhost:9890",
+    "secure": false
+  }
+}

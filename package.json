@@ -1,0 +1,79 @@
+{
+  "name": "monorepo-project",
+  "version": "0.0.1",
+  "description": "The Front-End Boilerplate of Typescript Monorepo.",
+  "scripts": {
+    "build": "pnpm recursive run build",
+    "clean": "node scripts/clean.js",
+    "dev:start": "pnpm recursive run dev --filter @monorepo-project/app",
+    "lint": "pnpm recursive run lint --filter @monorepo-project/app",
+    "lint-fix": "pnpm recursive run lint-fix --filter @monorepo-project/app",
+    "prepare": "node scripts/prepare.js"
+  },
+  "author": {
+    "name": "shijinyu",
+    "email": "sjym90@gmail.com",
+    "url": "https://github.com/shijinyu"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": "~6.*"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shijinyu/vue3-monorepo-boilerplate.git"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.175",
+    "lodash": "^4.17.21",
+    "vue": "^3.2.16",
+    "vue-types": "^4.1.1",
+    "windicss": "^3.1.9"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@rollup/plugin-inject": "^4.0.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jest": "^27.0.0",
+    "@types/node": "^16.10.3",
+    "@types/shelljs": "^0.8.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "5",
+    "@vitejs/plugin-legacy": "^1.6.2",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^8.0.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "esbuild": "^0.13.4",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.17.0",
+    "fs-extra": "^10.0.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.3",
+    "less": "^4.1.2",
+    "lint-staged": "^10.5.4",
+    "log4js": "^6.3.0",
+    "prettier": "^2.3.0",
+    "prettier-config-standard": "^4.0.0",
+    "shelljs": "^0.8.4",
+    "ts-jest": "^27.0.2",
+    "tsconfig-paths-jest": "^0.0.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3",
+    "unplugin-vue-components": "^0.15.6",
+    "vite": "^2.6.4",
+    "vite-plugin-windicss": "^1.4.10"
+  }
+}

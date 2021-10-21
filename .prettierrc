@@ -1,0 +1,23 @@
+{
+  "singleQuote": true,
+  "printWidth": 160,
+  "tabWidth": 2,
+  "semi": true,
+  "quoteProps": "as-needed",
+  "htmlWhitespaceSensitivity": "ignore",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": "package*.json",
+      "options": {
+        "printWidth": 1000
+      }
+    },
+    {
+      "files": "*.vue",
+      "options": {
+        "printWidth": 100
+      }
+    }
+  ]
+}

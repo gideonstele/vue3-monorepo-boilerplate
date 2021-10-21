@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["es2015"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "isolatedModules": false,
+    "module": "esnext",
+    "moduleResolution": "node"
+  },
+  "references": [],
+  "include": ["./*.js"],
+  "exclude": ["node_modules", "*/**"]
+}
