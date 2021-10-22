@@ -74,7 +74,7 @@ export default defineConfig(({ command, mode }) => {
       },
       dedupe: ['vue'],
     },
-    envPrefix: ['VITE_', 'MR_'],
+    envPrefix: ['VITE_'],
     base: './',
     build: {
       sourcemap: true,

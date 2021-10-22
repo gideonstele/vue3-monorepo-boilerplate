@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "https://boe-lite.nadileaf.com",
+    "target": "https://api.yourdevserver.domain",
     "secure": false
   },
   "/api/to/mock": {

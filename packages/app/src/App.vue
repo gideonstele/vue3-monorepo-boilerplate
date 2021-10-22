@@ -1,37 +1,23 @@
 <template>
-  <section id="root-app">
-    <router-view />
-  </section>
+  <config-provider>
+    <section id="root-app">
+      <router-view />
+    </section>
+  </config-provider>
 </template>
 
 <script lang="ts">
 import { defineComponent, onBeforeMount } from 'vue';
-import { authService } from '@/services/auth';
-import { useRouter } from 'vue-router';
-import { useStore } from '@/store';
+import { ConfigProvider } from 'ant-design-vue';
 const App = defineComponent({
   name: 'App',
+  components: {
+    ConfigProvider,
+  },
   setup() {
-    const store = useStore();
-    const router = useRouter();
-    onBeforeMount(async () => {
-      if (!store.getters['hasLogin']) {
-        router.replace({
-          name: 'login',
-        });
-      } else {
-        await authService.getUserInfo();
-      }
-    });
+    onBeforeMount(async () => {});
   },
 });
 
 export default App;
 </script>
-
-<style>
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-</style>

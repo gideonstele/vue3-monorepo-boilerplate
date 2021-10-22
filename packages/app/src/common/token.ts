@@ -1,6 +1,13 @@
 import localstore from '@/utils/localstore';
 
 class TokenManager {
+  private static instance: TokenManager;
+  static init() {
+    if (!this.instance) {
+      this.instance = new TokenManager();
+    }
+    return this.instance;
+  }
   private readonly store = localstore.session.namespace('mesoorauth');
 
   set(systemToken: string) {
@@ -16,4 +23,5 @@ class TokenManager {
   }
 }
 
-export const tokenManager = new TokenManager();
+const tokenManager = TokenManager.init();
+export default tokenManager;

@@ -53,6 +53,7 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^8.0.0",
     "commitizen": "^4.2.3",
+    "consola": "^2.15.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",
     "esbuild": "^0.13.4",
